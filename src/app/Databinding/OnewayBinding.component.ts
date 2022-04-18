@@ -18,9 +18,10 @@ import { Component, OnInit } from '@angular/core';
       react)
     </h3>
     <div class="form-group">
-      <p>New <title></title></p>
+      <p>New</p>
       <input #iTitle type="text" class="form-control w-25" />
       <button class="btn btn-success" (click)="changeTitle(iTitle.value)">
+        <!-- (click) = onclick -->
         Change title
       </button>
     </div>

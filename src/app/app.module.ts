@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BaiTapLayoutModule } from './Components/BaiTapLayout/BaiTapLayout.module';
 import { DemoComponent } from './Components/Demo/Demo.component';
 import { DataBindingModule } from './Databinding/DataBinding.module';
+import { DirectiveModule } from './Directive/Directive.module';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule, 
     AppRoutingModule,
     BaiTapLayoutModule, //module
-    DataBindingModule
+    DataBindingModule,
+    DirectiveModule
     //imports không imp dc component
     //exports thì dc component và cả module
   ],
