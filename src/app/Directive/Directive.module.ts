@@ -1,6 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { PropsComponent } from '../Props/Props.component';
+import { LoginComponent } from './BaiTapLogin.component';
+import { BaiTapQuanLySanPhamComponent } from './BaiTapQuanLySanPham.component';
+import { CardComponent } from './Card.component';
 import { DirectiveComponent } from './Directive.component';
 
 
@@ -9,7 +13,7 @@ import { DirectiveComponent } from './Directive.component';
 @NgModule({
     imports: [CommonModule,FormsModule],
     exports: [DirectiveComponent],
-    declarations: [DirectiveComponent],
-    providers: [],
+    declarations: [DirectiveComponent,CardComponent,LoginComponent,BaiTapQuanLySanPhamComponent],
+    
 })
 export class DirectiveModule { }

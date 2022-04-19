@@ -8,6 +8,7 @@ import { DemoComponent } from './Components/Demo/Demo.component';
 import { DataBindingModule } from './Databinding/DataBinding.module';
 import { DirectiveModule } from './Directive/Directive.module';
 import { HeaderComponent } from './header/header.component';
+import { PropsModule } from './Props/Props.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     BaiTapLayoutModule, //module
     DataBindingModule,
-    DirectiveModule
+    DirectiveModule,
+    PropsModule
     //imports không imp dc component
     //exports thì dc component và cả module
   ],
