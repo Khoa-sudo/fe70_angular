@@ -9,6 +9,16 @@ import { DataBindingModule } from './Databinding/DataBinding.module';
 import { DirectiveModule } from './Directive/Directive.module';
 import { HeaderComponent } from './header/header.component';
 import { PropsModule } from './Props/Props.module';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { en_US } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DemoAntModule } from './DemoAntd/DemoAntd.module';
+
+registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -24,11 +34,15 @@ import { PropsModule } from './Props/Props.module';
     BaiTapLayoutModule, //module
     DataBindingModule,
     DirectiveModule,
-    PropsModule
+    PropsModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    DemoAntModule
     //imports không imp dc component
     //exports thì dc component và cả module
   ],
-  providers: [],//Nơi import các service
+  providers: [{ provide: NZ_I18N, useValue: en_US }],//Nơi import các service
   bootstrap: [AppComponent] //Các thẻ component muốn sử dụng được trong index.html
 })
 export class AppModule { }
